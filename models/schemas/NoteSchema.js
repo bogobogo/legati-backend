@@ -1,5 +1,7 @@
+var mongoose = require('mongoose');
+
 module.exports = {
-    _id: { type: Schema.ObjectId, auto: true },
+    _id: { type: mongoose.Schema.ObjectId, auto: true },
     timestamp : Number,
     videoUrl : String, 
     text : String, 
