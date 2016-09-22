@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 var UserSchema = new mongoose.Schema({
-    _id: { type: Schema.ObjectId, auto: true },
+    _id: { type: mongoose.Schema.ObjectId, auto: true },
     email : String, 
     firstName : String,
     lastName: String,
