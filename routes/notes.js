@@ -15,7 +15,7 @@ router.post('/:notebookId', function(req, res, next) {
                     {$addToSet : {notes : req.body}}, function(err, result) {
         if (!err) {
             console.log(result);
-            res.json({ code: 201, message: result });
+            res.json({ code: 201, message: result});
         } else {
             console.log(err);
             res.json({ code: 400, message: err });
