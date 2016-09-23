@@ -3,6 +3,8 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var Notebooks = require('../models/Notebook.js');
 
+// CRUD
+
 router.get('/', function(req, res, next) {
   Notebooks.find(function (err, notebooks) {
     if (err) return next(err);
@@ -30,5 +32,4 @@ router.put('/', function(req, res, next) {
     res.json(post);
   });
 });
-
 module.exports = router;
