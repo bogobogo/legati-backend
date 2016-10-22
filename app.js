@@ -63,7 +63,7 @@ app.use(function(err, req, res, next) {
 // Use native Node promises
 mongoose.Promise = global.Promise;
 // connect to MongoDB
-mongoose.connect('mongodb://Admin:legato@ds021356.mlab.com:21356/legatidb')
+mongoose.connect('mongodb://Admin:legato@ds061246.mlab.com:61246/legati')
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
